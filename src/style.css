@@ -1,0 +1,137 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ffffff;
+  background-color: #111511;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #5bc303;
+  --color-primary-dark: #388E3C;
+  --color-primary-light: #C8E6C9;
+  --color-accent: #4CAF50;
+  --color-gray: #303030;
+  --color-gray-light: #949494;
+  --color-error: #f44336;
+
+  /* text */
+  --text-primary: #ffffff;
+  --text-secondary: #BDBDBD;
+
+  /* spacing */
+  --spacing-xx-small: 0.125rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing-normal: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 2.5rem;
+  --spacing-xxx-large: 4rem;
+
+  /* border-radius */
+  --radius: 4px;
+  --radius-md: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+  transition: color 150ms linear;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(17, 21, 17, 0.8);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(/rick.jpg);
+  opacity: 0.1;
+
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+button {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  padding: var(--spacing-x-small) var(--spacing-small);
+  min-width: 36px;
+  min-height: 28px;
+  display: flex;
+  line-height: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  color: var(--color-primary);
+  background-color: var(--color-gray);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.container {
+  width: 1200px !important;
+  max-width: 100% !important;
+  margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    padding: 0 var(--spacing-normal);
+  }
+}
+
+.router-link-active {
+  color: var(--color-primary-light);
+}

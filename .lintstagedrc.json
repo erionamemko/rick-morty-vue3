@@ -1,0 +1,3 @@
+{
+  "*.{ts,js,vue}": ["eslint -c .eslintrc.json \"src/**\" --cache --fix"]
+}

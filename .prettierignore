@@ -1,0 +1,19 @@
+# folders
+.vscode
+node_modules
+build
+dist
+.storybook
+
+#files
+*.env
+*.db
+*.svg
+*.html
+*.lock
+*.css
+.npmrc
+.prettierrc
+.editorconfig
+.lintstagedrc.json
+.commitlintrc.json
